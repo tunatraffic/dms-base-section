@@ -120,6 +120,7 @@ class tunaBaseSection extends PageLinesSection {
         // Anatomy of an option type
         $opts[] = array(
             'key'                   => $this->id.'_some_key', // name of the key unique to this option
+            'col'                   => 2, //set how many columns the option spans
             'type'                  => 'text', // Option Type
             'title'                 => __('Super Cool Option', 'tt-section'), // same as 'label' if omitted
             'label'                 => __('Select Cool Option', 'tt-section'),
