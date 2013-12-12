@@ -6,13 +6,13 @@
 	Description: A base section to be used to start new sections.
 	Class Name: tunaBaseSection
 	Demo:
-	Version: 1.2
-	Filter: component
+	Version: 1.0
 */
 
-/**
- * DMS Meta Info Tips
-
-	// You can set the filter value to one of the following: component, layout, full-width, format, gallery , nav, slider, social, widgetized, misc
-	
-*/
+// Add a LESS file
+        function tt_insert_less() {
+        $file = sprintf( '%sstyle.less', plugin_dir_path( __FILE__ ) );
+        if(function_exists('pagelines_insert_core_less')) {
+            pagelines_insert_core_less( $file );
+        }
+    }
